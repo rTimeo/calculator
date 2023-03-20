@@ -6,7 +6,9 @@
 }
 
 body {
-  background: url(../images/space.webp);
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-size: contain;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +18,7 @@ body .calculator {
   z-index: 5;
   height: 640px;
   width: 500px;
-  margin-top: 10%;
+  padding-top: 5%;
 }
 body form {
   padding: 30px;
