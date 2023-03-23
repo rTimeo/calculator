@@ -1,5 +1,10 @@
+const para = document.querySelector('p')
+
+
 let display = document.querySelector('.display');
 let calculation = '';
+let fullcalcul ='';
+
 
 function addToDisplay(value) {
   calculation += value;
@@ -8,16 +13,27 @@ function addToDisplay(value) {
 
 function clearDisplay() {
   calculation = '';
+  
   display.value = '';
 }
 
 function calculate() {
   try {
+
+
     let result = eval(calculation);
-    display.value = result;
+
     calculation = result.toString();
+        
+
+    display.value = calculation;
+
+
+    
+   
+
   } catch(error) {
-    alert('Invalid calculation');
+    alert('');
   }
 }
 
